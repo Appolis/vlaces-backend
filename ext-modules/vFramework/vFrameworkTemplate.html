@@ -8,7 +8,7 @@
                 <p class="v-logo-subtitle">{{ subtitle }}</p>
             </div>
 
-            <div nf-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="v-collapsed-menu pull-right">
+            <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="v-collapsed-menu pull-right">
                 <button type="button" class="btn v-nav-button">
                     <i class="fa fa-bars"></i>
                 </button>
