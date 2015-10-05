@@ -1,0 +1,31 @@
+<div class="v-title-bar">
+    <div class="row">
+        <div class="v-logo-area col-sm-6">
+            <img class="v-icon" ng-src="{{ iconFile }}"/>
+
+            <div class="v-title-area">
+                <p class="v-logo-title">{{ title }}</p>
+                <p class="v-logo-subtitle">{{ subtitle }}</p>
+            </div>
+
+            <div nf-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="v-collapsed-menu pull-right">
+                <button type="button" class="btn v-nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="v-right-side-controls col-sm-6">
+            <div>
+                <button class="btn btn-primary">Button 1</button>
+                <button class="btn btn-success">Button 2</button>
+                <button class="btn btn-warning">Button 3</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-transclude></div>
+
+<div style="position: absolute; left: 220px; top: 200px; color: red; font-size: 44px;">
+    {{ routeString }}
+</div>

@@ -1,0 +1,60 @@
+.v-menu-area {
+    position: relative;
+    background-color: #333333;
+    color: #cccccc;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.v-menu-area .btn:hover {
+    color: #cccccc;
+}
+
+.v-menu-area ul {
+    padding-left:  0;
+}
+
+.v-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.v-menu ul {
+    display: inline;
+    list-style-type: none;
+}
+
+.v-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.v-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.v-selectable-item:hover {
+    background-color: #555555;
+}
+
+.v-menu-icon {
+    margin-right: 10px;
+}
+
+.v-menu-active-indicator {
+    float: right;
+    color: #dddddd;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.v-noselect {
+    ~webkit-touch-callout: none;
+    ~webkit-user-select: none;
+    ~moz-user-select: none;
+    ~user-select: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Vlaces Backend</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="js/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="js/libs/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="ext-modules/vFramework/vFramework.css" rel="stylesheet" />
+    <link href="ext-modules/vMenu/vMenu.css" rel="stylesheet" />
+
+    <script src="js/libs/jquery/dist/jquery.js" ></script>
+    <script src="js/libs/angular/angular.js"></script>
+
+    <script src="ext-modules/vMenu/vMenuModule.js"></script>
+    <script src="ext-modules/vMenu/vMenuController.js"></script>
+    <script src="ext-modules/vMenu/vMenuDirective.js"></script>
+    <script src="ext-modules/vMenu/vMenuItemDirective.js"></script>
+
+    <script src="ext-modules/vDashboard/vDashboardModule.js"></script>
+
+    <script src="ext-modules/vFramework/vFrameworkModule.js"></script>
+    <script src="ext-modules/vFramework/vFrameworkController.js"></script>
+    <script src="ext-modules/vFramework/vFrameworkDirective.js"></script>
+
+    <script src="app/appModule.js"></script>
+
+</head>
+<body class="container-fluid">
+    <v-framework title="Vlaces"
+            subtitle="Area de Administraci&oacute;n"
+            icon-file="./images/logo.jpg" >
+
+        <v-menu>
+            <v-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></v-menu-item>
+            <v-menu-item label="Locations" icon="fa-location-arrow" route="locations"></v-menu-item>
+            <v-menu-item label="Raft Guides" icon="fa-user" route="guides"></v-menu-item>
+        </v-menu>
+    </v-framework>
+</body>
+</html>
+

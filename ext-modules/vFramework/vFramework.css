@@ -1,0 +1,77 @@
+.v-title-bar {
+    background-color: #ffffff;
+    padding: 0 20px;
+    border-bottom: 2px solid #000000;
+}
+
+.v-logo-area {
+    /*text-align: center;*/
+}
+
+.v-title-area {
+    display: inline-block;
+    text-align: center;
+}
+
+.v-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    border: 1px solid #999999;
+}
+
+.v-logo-title {
+    color: #111111;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+.v-logo-subtitle {
+    font-size: 13px;
+    margin-top: -13px;
+}
+
+@media screen and (max-width: 430px) {
+    .v-icon {
+        display: none;
+    }
+
+    .v-logo-title {
+        font-size: 18px;
+    }
+}
+
+.v-right-side-controls {
+    line-height: 60px;
+}
+
+.v-right-side-controls > div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .v-right-side-controls > div {
+        text-align: right;
+    }
+
+    .v-logo-area {
+        text-align: left;
+    }
+}
+
+.v-collapsed-menu {
+    display: inline-block;
+    height: 100%;
+}
+
+.v-nav-button {
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    border: 1px solid #888888;
+    padding: 0;
+    font-size: 26px;
+    color: #777777;
+}
